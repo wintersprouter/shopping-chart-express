@@ -11,6 +11,21 @@ module.exports = {
       amount: {
         type: Sequelize.INTEGER
       },
+      sn: {
+        type: Sequelize.INTEGER
+      },
+      payment_method: {
+        type: Sequelize.STRING
+      },
+      paid_at: {
+        type: Sequelize.DATE
+      },
+      params: {
+        type: Sequelize.TEXT
+      },
+      OrderId: {
+        type: Sequelize.INTEGER
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

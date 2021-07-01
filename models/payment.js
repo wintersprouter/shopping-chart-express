@@ -10,11 +10,16 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
+      Payment.belongsTo(models.Order)
     }
   };
   Payment.init({
-    amount: DataTypes.INTEGER
+    amount: DataTypes.INTEGER,
+    sn: DataTypes.INTEGER,
+    payment_method: DataTypes.STRING,
+    paid_at: DataTypes.DATE,
+    params: DataTypes.TEXT,
+    OrderId: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'Payment',

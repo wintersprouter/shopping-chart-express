@@ -11,6 +11,27 @@ module.exports = {
       name: {
         type: Sequelize.STRING
       },
+      phone: {
+        type: Sequelize.STRING
+      },
+      address: {
+        type: Sequelize.STRING
+      },
+      amount: {
+        type: Sequelize.INTEGER
+      },
+      sn: {
+        type: Sequelize.INTEGER
+      },
+      shipping_status: {
+        type: Sequelize.STRING
+      },
+      payment_status: {
+        type: Sequelize.STRING
+      },
+      UserId: {
+        type: Sequelize.INTEGER
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
